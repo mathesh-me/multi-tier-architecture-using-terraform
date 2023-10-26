@@ -12,6 +12,10 @@ This project allows us to deploy a highly available, scalable, and secure multi-
 
 - **Database Tier**: The database stores and manages our application data. In this architecture, we use Amazon RDS for a managed database service.
 
+## 📌 Architecture Diagram
+![multi-tier-architecture](https://github.com/mathesh-me/multi-tier-architecture-using-terraform/assets/144098846/14aeb752-ba87-4f51-87d5-bcf3000ee455)
+
+
 ## 🚦 Getting Started
 
 ### Prerequisites
@@ -50,8 +54,7 @@ The Web Tier is the entry point for incoming user requests. It typically include
 
 ### Web Tier Configuration
 
-You can find the configuration for the Web Tier in the [web-tier/](web-tier/) directory. It includes:
-
+- [Launch Template Configuration](launch-template-web.tf)
 - [Load Balancer Configuration](alb-web.tf)
 - [Auto Scaling Configuration](asg-web.tf)
 - [Security Group Configuration of Load balancer](alb-web-sg.tf)
@@ -67,8 +70,7 @@ The Application Tier hosts the application servers responsible for running busin
 
 ### Application Tier Configuration
 
-Explore the Application Tier configuration in the [app-tier/](app-tier/) directory. It includes:
-
+- [Launch Template Configuration](launch-template-app.tf)
 - [Load Balancer Configuration](alb-app.tf)
 - [Auto Scaling Configuration](asg-app.tf)
 - [Security Group Configuration of Load balancer](alb-app-sg.tf)
@@ -83,8 +85,7 @@ The Database Tier stores and manages our application data. We use Amazon RDS for
 
 ### Database Tier Configuration
 
-The Database Tier configuration is available in the [db-tier/](db-tier/) directory. It includes:
-
+- [DB Subnet group Configuration](db-subnet-group.tf)
 - [Amazon RDS Configuration](rds.tf)
 - [Security Group Configuration](db-sg.tf)
 
