@@ -1,4 +1,4 @@
-# AWS Multi-Tier Architecture with Terraform
+# Multi-Tier Architecture on AWS using Terraform
 
 Deploy a scalable and resilient multi-tier architecture on AWS using Terraform.
 
