@@ -66,6 +66,7 @@ The Application Tier hosts the application servers responsible for running busin
 
 - **Application Servers**: These run your application code and can be horizontally scaled.
 - **Load Balancer**: Distributes traffic to the application servers.
+- **Auto Scaling**: Automatically adjusts the number of web servers based on traffic.
 - **Security Groups**: Controls incoming and outgoing traffic to the application servers.
 
 ### Application Tier Configuration
@@ -91,7 +92,7 @@ The Database Tier stores and manages our application data. We use Amazon RDS for
 
 ## 🔧 Terraform Configuration
 
-The Terraform configuration for this project is organized into modules and resources to create the necessary AWS infrastructure components. Key components include:
+The Terraform configuration for this project is organized into different and resources to create the necessary AWS infrastructure components. Key resources include:
 
 - Virtual Private Cloud (VPC)
 - Subnets and Route Tables
